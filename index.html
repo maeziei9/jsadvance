@@ -3,40 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JavaScript 1</title>
 </head>
 <body>
-    <h1>JavaScript Web Output #1 </h1>
+    <h1>JavaScript Web Output #1</h1>
 
     <table>
         <tr>
             <td>
-                <label for="textNum">Insert Positive Number:</label>
+                <label for="txtNum">Insert any Positive Number:</label>
             </td>
             <td>
-                <input type="number" id="textNum">
+                <input type="text" id="txtNum">
             </td>
         </tr>
+
+        <tr>
             <td colspan="2">
-                <button onclick="insertNumbers()">Insert....</button>
-                <button onclick="clearEntity()">Clear Entries....</button>
+                <button onclick="insertNumbers()">Insert</button>
+                <button onclick="clearEntity()">Clear Entity</button>
             </td>
+        </tr>
     </table>
 
     <fieldset>
-        <legend>Inserted Numbers: </legend>
+        <legend>Inserted Numbers:</legend>
         <table id="numberList"></table>
         <div id="results"></div>
     </fieldset>
 
-    <button onclick="clearNumbers()">Clear Items</button>
+    <button onclick="clearItems()">Clear Items</button>
     <button onclick="getTotal()">Get Total</button>
-    <button onclick="showHighLow()">Identify Highest and Lowest Numbers.</button>
+    <button onclick="showHighLow()">Identify Highest and Lowest Number</button>
 
     <select id="sortOrder" onchange="sortNumbers(this.value)">
         <option value="">sort</option>
-        <option value="ascending">Ascending</option>
-        <option value="descending">Descending</option>
+        <option value="ascending">ascending</option>
+        <option value="descending">descending</option>
     </select>
 
     <script src="advanced.js"></script>
